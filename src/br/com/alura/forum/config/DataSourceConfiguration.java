@@ -21,7 +21,7 @@ public class DataSourceConfiguration {
 		return dataSource;
 	}
 	
-	@Beanc
+	@Bean
 	@Profile("desenvolvimento")
 	public DataSource desenvolvimento() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
