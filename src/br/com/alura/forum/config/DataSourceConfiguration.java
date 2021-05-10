@@ -15,13 +15,13 @@ public class DataSourceConfiguration {
 	public DataSource producao() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://3.22.42.63:8006/alura_forum?useSSL=false");
+		dataSource.setUrl("jdbc:mysql://18.223.108.226:8006/alura_forum?useSSL=false");
 		dataSource.setUsername("alura");
 		dataSource.setPassword("qwerty123");
 		return dataSource;
 	}
 	
-	@Bean
+	@Beanc
 	@Profile("desenvolvimento")
 	public DataSource desenvolvimento() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
